@@ -30,7 +30,7 @@ export default class App extends Component {
   getWeather = (event) => {
     event.preventDefault();
 
-    let url = "http://api.weatherapi.com/v1/forecast.json?key=" + this.apiKey + "&q=" + this.state.city +"&aqi=no&days=15&alerts=no";
+    let url = "https://api.weatherapi.com/v1/forecast.json?key=" + this.apiKey + "&q=" + this.state.city +"&aqi=no&days=15&alerts=no";
 
     console.log(url)
 
