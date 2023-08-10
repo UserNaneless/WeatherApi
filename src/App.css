@@ -1,90 +1,109 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.forecast{
-  display: flex;
-  width: 60%;
-  gap: 20px;
-  overflow: hidden;
-  height: 240px;
+.forecast {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    height: 240px;
 }
 
-img{
-  pointer-events: none;
+img {
+    pointer-events: none;
 }
 
-.app{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 50px;
-  height: 100vh;
-  gap: 40px;
+.app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding: 50px 20px;
+    height: 100vh;
+    gap: 40px;
 }
 
-.app form{
-  display: flex;
-  justify-content: center;
-  gap: 50px;
+.app form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 
-.cityInput{
-  height: 40px;
-  font-size: 1.25em;
-  padding: 10px 20px;
-  border-radius: 6px;
-  border: 1px solid lightblue;
-  
+.cityInput {
+    height: 40px;
+    font-size: 1.25em;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid lightblue;
+    flex-basis: 67%;
 }
 
-.cityInput:focus{
-  outline: solid lightblue;
+.cityInput:focus {
+    outline: solid lightblue;
 }
 
-.button{
-  height: 40px;
-  padding: 5px 10px;
-  font-size: 1.25em;
-  border: none;
-  border-radius: 6px;
-  background-color: #e8f4f8;
-  transition: all .2s;
+.button {
+    flex-basis: 33%;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 6px;
+    background-color: #e8f4f8;
+    transition: all .2s;
 }
 
-.button:hover{
-  background-color: #add8e6;
-  cursor: pointer;
+.button:hover {
+    background-color: #add8e6;
+    cursor: pointer;
 }
 
-.forecastDetails{
-  width: 60%;
-  height: 320px;
-  background-color: #e8f4f8;
-  border-radius: 6px;
-  margin-top: -20px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+.forecastDetails {
+    width: 100%;
+    height: 320px;
+    background-color: #e8f4f8;
+    border-radius: 6px;
+    margin-top: -20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.condition{
-  float: right;
+.condition {
+    float: right;
 }
 
-.mainConditionDetails{
-  width: 100%;
+.mainConditionDetails {
+    width: 100%;
 }
 
-.hourForecast{
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  display: flex;
-  gap: 20px;
+.hourForecast {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .app form {
+        gap: 20px;
+    }
+
+    .cityInput{
+        width: 50%;
+    }
+
+    .button{
+        font-size: 1.1em;
+    }
+
 }
